@@ -1,0 +1,27 @@
+﻿<Window x:Class="chargesystem.MaintainChargeForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="维修费用" Height="400" Width="500">
+    <Grid>
+    	
+		
+		
+          <Border BorderBrush="Black" BorderThickness="1" Height="86" Margin="12,3,16,0" VerticalAlignment="Top"/>
+        <DataGrid Margin="31,143.687,25,77.313"  ItemsSource="{Binding Mode=OneWay}" IsSynchronizedWithCurrentItem="True"  CanUserSortColumns="False" CanUserResizeColumns="True" CanUserReorderColumns="False" CanUserResizeRows="true" AutoGenerateColumns="False" CanUserAddRows="False" >
+          
+            <DataGrid.Columns>
+	           <DataGridTextColumn Header="报修时间"  Binding="{Binding M_Time}" IsReadOnly="True" Width="*" />
+                <DataGridTextColumn Header="报修人"  Binding="{Binding M_Name}" IsReadOnly="True" Width="*" />
+                <DataGridTextColumn Header="费用出处" Binding="{Binding M_Feederivate}" IsReadOnly="True" Width="*"/>
+                <DataGridTextColumn Header="金额"  Binding="{Binding M_Fee}"  IsReadOnly="True" Width="*" />
+			</DataGrid.Columns>
+			
+          	</DataGrid>
+          <TextBlock HorizontalAlignment="Right" TextWrapping="Wrap" Text="公司总费用：" VerticalAlignment="Top" Margin="0,126,128,0"/>
+          <TextBlock HorizontalAlignment="Right" TextWrapping="Wrap" Text="231" VerticalAlignment="Top" Margin="0,126,70,0"/>
+          <TextBlock HorizontalAlignment="Right" TextWrapping="Wrap" Text="元" VerticalAlignment="Top" Margin="0,126,54,0"/>
+          <Button Content="确定" HorizontalAlignment="Left"  Click="closeForm" VerticalAlignment="Bottom" Width="75" Margin="84,0,0,39.313"/>
+          <Button Content="打印" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="75" Margin="0,0,143,39.313"/>
+		  <Border BorderBrush="Black"  BorderThickness="1" Margin="12,101,13,24"/>
+    </Grid>
+</Window>

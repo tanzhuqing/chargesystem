@@ -1,0 +1,28 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	x:Class="chargesystem.chargeresponse"
+	x:Name="Window"
+	Title="chargeresponse"
+	Width="500" Height="400">
+
+	<Grid x:Name="LayoutRoot">
+		<TextBlock HorizontalAlignment="Left" Height="22" Margin="87,64,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="63" FontSize="13.333"><Run Language="zh-cn" Text="用户名："/></TextBlock>
+		<TextBlock Height="26" Margin="162,64,238,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="13.333"><Run Language="zh-cn" Text="邹国柱"/></TextBlock>
+		<TextBlock Height="22" Margin="0,64,177,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="13.333" HorizontalAlignment="Right" Width="63"><Run Language="zh-cn" Text="小区："/></TextBlock>
+		<TextBlock HorizontalAlignment="Right" Height="22" Margin="0,63,88,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="87" FontSize="13.333"><Run Language="zh-cn" Text="虹桥国际："/></TextBlock>
+		<TextBlock HorizontalAlignment="Left" Height="22" Margin="88,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="63" FontSize="13.333"><Run Language="zh-cn" Text="楼   盘："/></TextBlock>
+		<TextBlock HorizontalAlignment="Left" Height="22" Margin="164,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="63" FontSize="13.333"><Run Language="zh-cn" Text="1号楼"/></TextBlock>
+		<TextBlock Height="22" Margin="239,111,182,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="13.333" RenderTransformOrigin="2.683,1.136"><Run Language="zh-cn" Text="  单元："/></TextBlock>
+		<TextBlock Height="22" Margin="0,109,113,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="13.333" RenderTransformOrigin="2.683,1.136" HorizontalAlignment="Right" Width="63"><Run Language="zh-cn" Text="第一单元"/></TextBlock>
+		<TextBlock HorizontalAlignment="Left" Margin="89,159,0,0" TextWrapping="Wrap" Width="63" FontSize="13.333" Height="22" VerticalAlignment="Top"><Run Language="zh-cn" Text="门牌号："/></TextBlock>
+		<TextBlock HorizontalAlignment="Left" Margin="176,160,0,180" TextWrapping="Wrap" Width="63" FontSize="13.333"><Run Language="zh-cn" Text="00001"/></TextBlock>
+		<GroupBox Header="用户信息" Margin="40,30,24,152"/>
+		<TextBlock HorizontalAlignment="Left" Height="22" Margin="85,0,0,104" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="95" FontSize="13.333"><Run Language="zh-cn" Text="本次交纳金额："/></TextBlock>
+		<TextBlock Height="22" Margin="184,0,0,104" TextWrapping="Wrap" VerticalAlignment="Bottom" FontSize="13.333" HorizontalAlignment="Left" Width="58"><Run Language="zh-cn" Text="110元"/></TextBlock>
+		<TextBlock HorizontalAlignment="Right" Height="22" Margin="0,0,200,105" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="41" FontSize="13.333"><Run Language="zh-cn" Text="余额："/></TextBlock>
+		<TextBlock HorizontalAlignment="Right" Height="21" Margin="0,0,158,106" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="34"><Run Language="zh-cn" Text="10元"/></TextBlock>
+		<Button Content="打印发票" HorizontalAlignment="Right" Height="35" Margin="0,0,134,41" VerticalAlignment="Bottom" Width="81" RenderTransformOrigin="1.148,0.571"/>
+		<Button Content="返回" HorizontalAlignment="Right" Height="34" Margin="0,0,31,42" VerticalAlignment="Bottom" Width="86" RenderTransformOrigin="1.148,0.571"/>
+	</Grid>
+</Window>

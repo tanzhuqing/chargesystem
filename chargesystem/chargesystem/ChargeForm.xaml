@@ -1,0 +1,24 @@
+﻿<Window
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d"
+	x:Class="chargesystem.ChargeForm"
+	x:Name="Window"
+	Title="ChargeForm"
+	Width="600" Height="400">
+
+	<Grid x:Name="LayoutRoot">
+		<TextBlock HorizontalAlignment="Left" Height="21" Margin="75,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="73" FontSize="13.333"><Run Language="zh-cn" Text="上次余额："/></TextBlock>
+		<TextBlock Height="21" Margin="278,69,215,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="13.333"><Run Language="zh-cn" Text="当前余额："/></TextBlock>
+		<TextBlock HorizontalAlignment="Left" Height="21" Margin="33,0,0,70" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="72" RenderTransformOrigin="0.758,0.333" FontSize="13.333" d:LayoutOverrides="VerticalAlignment"><Run Language="zh-cn" Text="实收现金："/></TextBlock>
+		<TextBox Height="26" Margin="147,67,0,0" TextWrapping="Wrap" Text="100" VerticalAlignment="Top" HorizontalAlignment="Left" Width="92"/>
+		<TextBlock Height="21" Margin="247,69,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="13.333" HorizontalAlignment="Left" Width="17"><Run Language="zh-cn" Text="元"/></TextBlock>
+		<TextBox Height="26" Margin="0,66,151,0" TextWrapping="Wrap" Text="-100" VerticalAlignment="Top" HorizontalAlignment="Right" Width="79" RenderTransformOrigin="0.494,0.154"/>
+		<TextBlock Height="21" Margin="0,68,120,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="13.333" HorizontalAlignment="Right" Width="17"><Run Language="zh-cn" Text="元"/></TextBlock>
+		<TextBox Height="26" Margin="117,0,208,65" TextWrapping="Wrap" Text="110" VerticalAlignment="Bottom" d:LayoutOverrides="VerticalAlignment"/>
+		<Button Content="确定" HorizontalAlignment="Right" Height="34" Margin="0,0,84,61" VerticalAlignment="Bottom" Width="110" d:LayoutOverrides="VerticalAlignment" Click="charge"/>
+		<GroupBox Header="帐户信息" Height="90" Margin="18,33,26,0" VerticalAlignment="Top" FontSize="13.333"/>
+		<TextBlock HorizontalAlignment="Left" Height="25" Margin="77,189,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" FontSize="13.333"><Run Language="zh-cn" Text="缴费类型：   包月"/></TextBlock>
+		<GroupBox Header="住户信息" Margin="19,144,26,0" Height="94" VerticalAlignment="Top" FontSize="13.333"/>
+	</Grid>
+</Window>
